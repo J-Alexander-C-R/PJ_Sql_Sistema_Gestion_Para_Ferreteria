@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa_Negocios;
 
 namespace Capa_Presentacion
 {
@@ -15,30 +16,24 @@ namespace Capa_Presentacion
         public Frm_Producto()
         {
             InitializeComponent();
+            dgv_Producto.DataSource = datagv_Producto.MostrarDatos();
         }
 
+        private CN_Producto datagv_Producto = new CN_Producto();
         private void Frm_Producto_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Frm_Empleado frmSecondary = new Frm_Empleado();
-            frmSecondary.Show();
-        }
-
-        private void btn_Cliente_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Frm_Cliente frm_terciary = new Frm_Cliente();
-            frm_terciary.Show();
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void dgv_Producto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

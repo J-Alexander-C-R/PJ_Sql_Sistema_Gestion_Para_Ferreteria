@@ -50,19 +50,19 @@ namespace Capa_Presentacion
             string usuario = txt_Usuario.Text.Trim();
             string contraseña = txt_Contraseña.Text.Trim();
 
-            // Validar que los campos no estén vacíos
+            //TODO Validar que los campos no estén vacíos
             if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
             {
                 MessageBox.Show("Por favor, ingrese usuario y contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Llamar a la capa de negocios para validar el usuario
+            //TODO Llamar a la capa de negocios para validar el usuario
             if (objNegocio.ValidarUsuario(usuario, contraseña))
             {
                 MessageBox.Show("¡Inicio de sesión exitoso!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Abrir el formulario principal y ocultar el de login
+                //TODO Abrir el formulario principal y ocultar el de login
                 this.Hide();
                 Frm_Principal formPrincipal = new Frm_Principal();
                 formPrincipal.Show();

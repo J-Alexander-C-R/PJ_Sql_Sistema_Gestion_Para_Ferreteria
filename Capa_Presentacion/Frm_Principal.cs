@@ -19,48 +19,39 @@ namespace Capa_Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
             Frm_Producto frm_Producto = new Frm_Producto();
-            frm_Producto.MdiParent = this;
-            frm_Producto.FormBorderStyle = FormBorderStyle.None;
-            frm_Producto.Dock = DockStyle.Fill;
-            frm_Producto.Show();
+            frm_Producto.ShowDialog();
 
         }
 
         private void btn_Empleado_Click(object sender, EventArgs e)
         {
-            
             Frm_Empleado frm_Empleado = new Frm_Empleado();
             frm_Empleado.ShowDialog();
         }
 
         private void btn_Cliente_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Frm_Cliente frm_Cliente = new Frm_Cliente();
-            frm_Cliente.Show();
+            frm_Cliente.ShowDialog();
         }
 
         private void btn_Categoria_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Frm_Categoria frm_categoria = new Frm_Categoria();
-            frm_categoria.Show();
+            frm_categoria.ShowDialog();
         }
 
         private void btn_Proveedor_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Frm_Proveedor frm_proveedor = new Frm_Proveedor();
-            frm_proveedor.Show();
+            frm_proveedor.ShowDialog();
         }
 
         private void btn_Consulta_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Frm_Consulta frm_consulta = new Frm_Consulta();
-            frm_consulta.Show();
+            frm_consulta.ShowDialog();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -68,6 +59,12 @@ namespace Capa_Presentacion
             this.Hide();
             Login frm_login = new Login();
             frm_login.Show();
+        }
+
+        private void btn_Sistema_Click(object sender, EventArgs e)
+        {
+            Frm_Sistema frm_sistema = new Frm_Sistema();
+            frm_sistema.ShowDialog();
         }
     }
 }

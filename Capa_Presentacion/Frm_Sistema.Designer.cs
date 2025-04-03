@@ -43,12 +43,11 @@
             panel1.BackColor = Color.FromArgb(42, 28, 109);
             panel1.Controls.Add(pictureBox9);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(1260, 0);
+            panel1.Location = new Point(1226, 0);
             panel1.Margin = new Padding(4, 2, 4, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 760);
-            panel1.TabIndex = 69;
-            panel1.Paint += panel1_Paint;
+            panel1.Size = new Size(254, 760);
+            panel1.TabIndex = 76;
             // 
             // pictureBox9
             // 
@@ -60,7 +59,6 @@
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 49;
             pictureBox9.TabStop = false;
-            pictureBox9.Click += pictureBox9_Click;
             // 
             // panel2
             // 
@@ -70,8 +68,8 @@
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(4, 2, 4, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1260, 150);
-            panel2.TabIndex = 70;
+            panel2.Size = new Size(1226, 150);
+            panel2.TabIndex = 77;
             // 
             // label1
             // 

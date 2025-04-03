@@ -39,6 +39,7 @@
             btn_Empleado = new Button();
             pictureBox9 = new PictureBox();
             panel3 = new Panel();
+            btn_Salir = new Button();
             pictureBox1 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -49,7 +50,6 @@
             pictureBox5 = new PictureBox();
             panel2 = new Panel();
             label1 = new Label();
-            btn_Salir = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel3.SuspendLayout();
@@ -117,6 +117,7 @@
             btn_Sistema.TabIndex = 35;
             btn_Sistema.Text = "Sistema";
             btn_Sistema.UseVisualStyleBackColor = false;
+            btn_Sistema.Click += btn_Sistema_Click;
             // 
             // btn_Proveedor
             // 
@@ -218,6 +219,22 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(228, 56);
             panel3.TabIndex = 30;
+            // 
+            // btn_Salir
+            // 
+            btn_Salir.BackColor = Color.FromArgb(42, 28, 109);
+            btn_Salir.FlatAppearance.BorderSize = 0;
+            btn_Salir.FlatStyle = FlatStyle.Flat;
+            btn_Salir.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_Salir.ForeColor = Color.White;
+            btn_Salir.Location = new Point(82, 8);
+            btn_Salir.Margin = new Padding(4, 2, 4, 2);
+            btn_Salir.Name = "btn_Salir";
+            btn_Salir.Size = new Size(134, 36);
+            btn_Salir.TabIndex = 36;
+            btn_Salir.Text = "X";
+            btn_Salir.UseVisualStyleBackColor = false;
+            btn_Salir.Click += btn_Salir_Click;
             // 
             // pictureBox1
             // 
@@ -329,22 +346,6 @@
             label1.Size = new Size(750, 84);
             label1.TabIndex = 2;
             label1.Text = "Gestion de Ferreterias";
-            // 
-            // btn_Salir
-            // 
-            btn_Salir.BackColor = Color.FromArgb(42, 28, 109);
-            btn_Salir.FlatAppearance.BorderSize = 0;
-            btn_Salir.FlatStyle = FlatStyle.Flat;
-            btn_Salir.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Salir.ForeColor = Color.White;
-            btn_Salir.Location = new Point(82, 8);
-            btn_Salir.Margin = new Padding(4, 2, 4, 2);
-            btn_Salir.Name = "btn_Salir";
-            btn_Salir.Size = new Size(134, 36);
-            btn_Salir.TabIndex = 36;
-            btn_Salir.Text = "X";
-            btn_Salir.UseVisualStyleBackColor = false;
-            btn_Salir.Click += btn_Salir_Click;
             // 
             // Frm_Principal
             // 
